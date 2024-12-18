@@ -1,0 +1,498 @@
+*{ margin: 0px;padding: 0px;box-sizing: border-box;}
+.home{
+    width: 100vw;height: 100vh;position: relative;
+    background-image: url(../images/homepaper.jpg );position: relative;background-size: cover;background-attachment: fixed;
+}
+.header{
+    width: 100%;height: 50px;background-color: rgb(127, 129, 255,0.7);top: 0px;
+    position: fixed;top: 0px;z-index: 100;
+}
+.homeicon{
+    font-size: 40px;margin-left: 20px;color: white;
+}
+.homeoverlayer{position: absolute;background-color: rgba(120, 120, 180, 0.4);
+    width: 100%;height: 100%;
+
+}
+.search{
+    width: 200px;height: 30px;position: relative;display: inline-block;
+    border-radius:  30px;bottom: 5PX;margin-left: 20px;
+}
+.search::after{
+content: "\f002";position: absolute;
+;font-weight: 900;font-size: 18px;top: 5 px;left: 5px;
+font-family: "Font Awesome 5 Free";padding: 4PX; 
+}
+.search input{
+    padding: 5PX;background-color:white; width: 200px;height: 30px;border-radius: 30px;border: solid;
+    border-color: white;
+}
+.search:active{
+    border: solid;border-color: black;
+}
+.header ul li{
+    display: inline-block;margin-left: 40px;font-size: 20px;
+    padding-top: 10px;padding-right: 10px;
+}
+.blog{
+    display:inline-block;position: relative;
+}
+.bloglist{
+    position: absolute;
+    width: 150px;
+    padding: 5px;
+    background-color: rgb(113, 113, 219);
+    text-align: center;
+    /* left: 0px; */
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 50;
+    border: 1px solid rgb(95, 95, 192);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.blog:hover .bloglist{
+    visibility: visible;opacity: 1;
+}
+.headerlist{
+    float: right;}
+   .header .headerlist a{
+        text-decoration: none;color: white;position: relative;
+    }
+    .headerlist li a:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: blue;
+        opacity: 0
+
+    }
+    .headerlist li a:hover:after{
+        width: 100%;
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+.homecontent{
+    color: rgb(2, 2, 150);position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);text-transform: capitalize;
+    font-size: 20px;text-align: center;
+}
+.homecontent h1{
+    text-transform: uppercase;font-size: 45px;color: rgb(2, 2, 150);
+    font-weight: 900;letter-spacing: 2px;padding-bottom: 20px;
+}
+.homebtn1{
+    width: 150px;height: 50px;border-radius: 15%;margin-top: 20px;
+    text-transform: uppercase;background-color: rgb(14, 11, 233);color: white;
+}
+.hb2{
+    margin-left: 15px;background-color: blanchedalmond;color: rgb(42, 9, 231);
+}
+.homebtn1:hover{ opacity: 0.5;}
+
+h2{
+    text-transform: capitalize;font-size: 30px;text-align: center;
+    padding-top: 50px;
+}
+.div1{width: 100px;height: 5px;background-color: blue;
+    margin: auto; margin-top: 10px;}
+    .parent{
+        width: 80%;margin: auto;height: 500px;overflow: hidden;;
+    }
+    .two{
+        margin: 0px 40px;
+    }
+.child{
+    width: 300px;height: 200px;border: solid 2px;
+    border-color:blue;float: left;background-color: lightblue;
+    ;margin-top: 100px;text-align: center;position: relative;border-radius: 5%;
+}
+.child i{
+    display: block;font-size: 30px;color: rgb(14, 17, 236);padding-top: 20px;
+}
+.child h2{
+    font-size: 28px;padding-top: 15px;padding-bottom: 10px;
+}
+.child p{
+    padding-bottom: 15px;font-size: 18px;color: gray;
+}
+.child:after{content: '';
+    width: 0px;height: 0px;position: absolute;top: 0px;left: 0px;transition: 1s;
+}
+.child:hover:after{
+    width: 100%;height: 100%;background-color: rgb(14, 1, 1,0.5);border-radius: 5%;
+}
+.feature{
+    width: 100%;height: 700px;background-color: aqua;
+}
+.fparent1{
+    width: 90%;overflow: hidden;margin: auto;margin-top: 40px;
+}
+.fpc{
+    width: 30%;height: 200px;background-color: bisque;float: left;position: relative;
+}
+.cpf{
+    margin: 0% 5%;position: relative;
+}
+.fpc img{
+    width: 100%;height: 100%;
+}
+
+.fpclayer{
+    position: absolute;width: 100%;height: 100%;background-color: rgb(22, 21, 21,0.7);
+    text-align: center;color: rgb(189, 179, 179);font-size: 30px;top: 0px;left: 0px;padding-top: 20px;
+    visibility: hidden;
+}
+.fpclayer a i{
+font-size: 35pxpx;line-height: 40px;color:gray;background-color: white;margin-top: 20px;
+}
+.fpc p{
+    line-height: 40px;font-size: 20px;padding-top: 25px;
+}
+.fpc:hover .fpclayer{
+    visibility: visible;
+}
+.sec2parent{
+    margin-top: 40px;overflow: auto;margin: auto;padding-top: 50px;width: 90%;
+    
+}
+.pp{
+    margin-top: 40px;
+}
+.sec2child{
+    width: 300px;height: 200px;border: solid 2px;
+    border-color:blue;float: left;background-color: lightblue;
+    margin-left: px;border-radius: 10%;position: relative;
+    
+}
+.sc{
+        margin:0px 100px
+}
+.sec2child i{
+    font-size: 30px;text-align: center;text-transform: capitalize;padding-left: 10px;
+    padding-top: 10px;
+}
+.sec2child p{
+    text-align: center;font-size: 22px;text-transform: capitalize;
+    line-height: 30px;padding-top: 14px;
+}
+.sec2child:after{content: '#';
+    width: 0px;height: 0px;position: absolute;top: 0px;left: 0px;
+    transition: 1s;border-radius: 10%;
+}
+.sec2child:hover:after{  width: 100%;height: 100%;
+    background-color: rgb(14, 1, 1,0.5);
+}
+.section3{
+    width: 90%;
+    margin: auto;overflow: auto;margin-top: 100px;
+}
+.half{
+    width: 50%;background-color:white;float: left;text-align: left;
+}
+.half h2{
+    text-align: left;
+}
+.half .div1{
+    margin-left:25px;width: 50px;
+}
+.half p{
+    text-transform: capitalize;font-size: 18px;line-height: 18px
+    ;padding-left: 10px;padding-top: 50px;padding-bottom: 15px;
+}
+.halflist{
+    padding-right:100px;
+}
+.half ul{
+    list-style-type: square;line-height: 50px;padding-right: 100px;
+}
+.half2{
+    width: 30%;float: left;margin-left: 20%;padding-top: 50px;
+}
+.half2 img{
+    width: 100%;
+}
+.bullet {
+    font-size: 20px;color: grey;line-height: 30px;text-align: center;padding: 10px;
+}
+.bullet i{padding: 10px;
+}
+.poll{
+    color: blue;
+}
+.bullet i:hover{
+    color: blue;
+}
+.trans{
+    width: 100%;height: 500px;background-image: url(../images/Free-Wallpapers.jpg);margin-top: 100px;
+    background-size: cover;background-attachment: fixed;position: relative;
+}
+.tranoverlayer{
+    position: absolute;width: 100%;height: 100%;background-color: rgba(3, 3, 3, 0.6);
+}
+.achivecontainer{width: 100%;
+    overflow: auto;position: absolute;
+    top: 50%;left: 50%;transform: translate(-50%,-50%);
+}
+.achive{
+    width: 20%;float: left;text-align: center;font-size: 40px;margin-left: 5%;
+}
+.achive h3{font-size: 30px;}
+.achive p{font-size: 20px;}
+.pricingparent{
+    width: 80%;margin: auto;overflow:auto;position: relative;
+}
+.pr{
+    margin: 0px 5%;
+}
+.price{
+    width: 30%;border: solid;float: left;margin-top: 75px;
+    text-align: center;padding-top: 25px;font-size: 20px;
+    line-height: 30px;border-radius: 20px;border-color: blue;
+    position: relative;text-transform: capitalize;
+
+}
+.price:after{
+    content: '';
+    width: 100%;height: 0px;position: absolute;top: 0;left: 0;
+    transition: 1s;border-radius: 20px;z-index: -1;
+}
+.price:hover:after{
+    width: 100%;height: 100%;background-color: rgb(14, 1, 1,0.5);
+}
+
+.circle{
+    width: 100px;height: 100px;border-radius: 50%;border: solid;
+text-align: center;padding: 15px;font-size: 22px;
+margin: auto;padding-top: 20px;border-color: rgb(103, 103, 224);
+}
+.price:hover .circle {
+    border-color: blue;font-size: 23px;font-weight: bold;}
+.price:hover.price button{
+    width: 200px;color: blue;}
+
+.price button{
+    width: 150px;height: 50px;font-size: 20px;margin-top: 15px;
+    margin-bottom: 15px;border-color: blue;border-radius: 15%;
+    color: rgba(39, 38, 38, 0.904);
+}
+.price h3{
+    padding-bottom: 20px;font-size: 23px;
+}
+.price p{
+    padding-top: 20px;
+}
+/* /-------------------------------------------------------- */
+.aboutcontaineroverlay{
+    width: 100%;height: 400px;
+    background-image: url(../images/perfume-with-floral-aroma-burst-generative-ai_74760-4858.jpg);
+    background-size: cover;margin-top: 100px;position: relative;
+}
+.aboutcontainer{
+    position: absolute;width: 100%;height: 100%;
+    background-color: rgb(3, 3, 214,0.5);z-index: 2;
+}
+.aboutparent{
+    width: 80%;margin: auto;overflow: auto;
+}
+.itemgeneral{
+    float: left;width: 40%;margin-left: 30px;
+}
+.about-item img{
+    border-radius: 50%;position: absolute;
+    left: 50px;
+    top: 120px;
+}
+.about-item{
+    text-transform: capitalize;
+    padding: 140px 40px 10px 150px;
+position: relative;
+line-height: 1.4;
+}
+.itemgeneral p{
+    margin: 20px 30px 0px 50px;
+line-height: 1.4;
+text-transform: capitalize;
+color: black;
+}
+/* /-------------------------------------------------------- */
+.memberparent{
+    width: 80%;margin: auto;padding-top: 50px;overflow: auto;
+}
+.member{
+    float: left;
+    width: 30%;background-color: bisque;
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    border-radius: 10px;
+}
+.member2{
+    margin: 0px 5%;
+}
+.memberimage{
+    width: 85%;margin: auto;position: relative;
+
+}
+.membericons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.membericons a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    background-color: rgb(101, 101, 236);
+    margin-left: auto;
+}
+.membericons a i{
+    line-height: 40px;
+}
+.memberinfo{
+    text-transform: capitalize;line-height: 40px;font-size: 25px;
+}
+.memberinfo p{
+    color: gray;font-size: 20px;
+}
+.member:hover .membericons{
+    visibility:visible;
+}
+.member:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(179, 179, 245);
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+}
+.member:hover:after{
+    width: 100%;
+height: 100%;
+opacity: 0.5;
+transition: 0.5s;
+}
+/* /-------------------------------------------------------- */
+.newsparent{
+    overflow: auto;width: 80%;margin: auto;padding-top: 50px;
+}
+.news-item{
+    width: 30%;
+    text-align: center;
+    height: auto;
+    float: left;
+    border: 1px solid rgb(100, 100, 241);
+    border-radius: 10px;line-height: 30px;
+    position: relative;
+}
+.newsitem2{
+    margin: 0px 5%;
+}
+.news-item img{
+    border-radius: 5%;padding:5%;width: 100%;
+}
+.news-item-icons ul{
+    list-style: none;}
+
+.news-item-icons ul li{
+    display: inline-block;margin-right: 10px;
+    
+}
+.news-item-icons i{
+    color: blue;font-size: 20px;
+}
+.news-item-icons{
+   width: 100%;height: 20px;
+    padding-right: 50px;font-weight: bold;font-size: 20px;
+}
+.news-item-info{
+    padding: 15px;
+}
+.news-item-info a{
+    text-decoration: none;font-size: 20px;color: blue;
+}
+.news-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(179, 179, 245);
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+    z-index: -1;
+}
+.news-item:hover:after{
+    width: 100%;
+height: 100%;
+opacity: 0.5;
+transition: 0.5s;
+}
+.news-item:hover .news-item-info h3{
+    color: rgb(7, 182, 36);font-style: italic;
+}
+.news-item:hover .news-item-info p{
+    color: blue;font-weight: 800;
+}
+/* /-------------------------------------------------------- */
+
+.section10{
+    width: 100%;height: 400px;
+    background-color: lightblue;margin-top: 50px;
+}
+.footercontent{
+    width: 50%; height: 400px;margin: auto;text-align: center;
+    
+}
+.imagefooter{
+    padding-top: 20px;
+}
+.imagefooter, .imagefooter img{
+    margin: auto;width: 300px;height: 200px;
+    border-radius: 5%
+    
+}
+.footericons{
+    width: 50%;height: 60px;margin: auto;
+}
+
+.footericons ul{
+    list-style: none;
+}
+.footericons ul li{
+    display: inline-block;width: 50px;height: 50px;border-radius:50%
+    ;background-color: rgb(55, 55, 238);font-size: 28px;
+    line-height: 25px;color:blue;
+    padding-top: 10px;margin-top: 50px;position: relative;
+    opacity: 0.5;
+}
+.footericons ul li:hover{
+    opacity: 1;
+}
+.cop{
+    padding-top: 30px;
+}
+.footercontent p{
+    font-size: 13px;
+text-transform: uppercase;
+color: rgb(100, 99, 99);
+padding-top: 30px;
+text-align: center;
+}
